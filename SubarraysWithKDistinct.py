@@ -5,7 +5,8 @@ class Solution(object):
         :type K: int
         :rtype: int
         """
-        arrays = []
+        #this code does work but leetcode has an exceeded time limit
+        counter = 0
         for i in range(len(A)):
             subArray = []
             subCount = 0
@@ -15,6 +16,9 @@ class Solution(object):
                     subCount += 1
                 if subCount <= K:
                     subArray += [curNum]
-                if subArray not in arrays:
-                    arrays += [str(subArray)]
-        return len(arrays)
+                else:
+                    break
+                if subCount == K:
+                    print(subArray)
+                    counter += 1
+        return counter
