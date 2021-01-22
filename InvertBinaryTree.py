@@ -1,4 +1,11 @@
 #https://leetcode.com/problems/invert-binary-tree/
+# Definition for a binary tree node.
+class TreeNode:
+    def __init__(self, val=0, left=None, right=None):
+        self.val = val
+        self.left = left
+        self.right = right
+#the code above should not be pasted inbto leetcode because it is already implemented there but I need it here for autocomplete =)
 class Solution:
     def swapNodes(self, left: TreeNode, right: TreeNode):
         if left is not None:
