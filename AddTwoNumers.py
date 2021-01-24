@@ -23,7 +23,7 @@ class Solution:
             finalVal -= 10
             newTen = True
         if next1 is None and next2 is None:
-            if not isTen:
+            if not newTen:
                 return ListNode(finalVal)
             else:
                 return ListNode(finalVal, ListNode(1))
