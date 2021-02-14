@@ -4,5 +4,5 @@ class Solution:
         counter1, counter2, state = 0, 0, False
         while len(merged) < len(nums1) + len(nums2):
             if not state:
-
+                print("stop")
 
